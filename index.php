@@ -633,14 +633,31 @@ transitions
 										<div class="row">
 												<div class="col-sm-12 margin-bottom">
 													<label>Nama</label>
-													<input class="name-input" type="text" name="nama" required>
+													<input class="name-input" type="text" name="nama" 
+													<?php
+													if (isset($_POST['nama']))
+													{
+														$nama = $_POST['nama'];
+														echo "values='$nama'";
+													}
+													?>
+													required>
 													<br>
 
 													<label>Pesan</label>
-													<input type="text" class="name-input" name="isi" required>
+													<input type="text" class="name-input" name="isi"  
+													<?php
+													if (isset($_POST['isi']))
+													{
+														$isi = $_POST['isi'];
+														echo "values='$isi'";
+													}
+													?>
+
+													required>
 													<br>
 
-													<input type="checkbox" class="mt-1" name="kehadiran" id="kehadiran1" value="ya">
+													<input type="checkbox" class="mt-1" name="kehadiran" id="kehadiran1" value="ya" checked>
 													<label for="kehadiran1">Saya akan hadir</label>
 												</div>
 												<div class="col-sm-12 center-text">
@@ -653,16 +670,32 @@ transitions
 									</form>
 									<?php
 											if (isset($_POST['kirim'])) {
-												$namaPengirim = $_POST['nama'];
-												$isi = $_POST['isi'];
-												$kehadiran = $_POST['kehadiran'];
+												$namaPengirim = htmlspecialchars( $_POST['nama']);
+												$isi =htmlspecialchars ($_POST['isi']);
+												$kehadiran = 'tidak';
+												if ($_POST['kehadiran'])
+												{
+												    
+												$kehadiran = htmlspecialchars ($_POST['kehadiran']);
+												}
 												$action = mysqli_query($conn, "INSERT INTO pesan VALUES (NULL,'$namaPengirim','$isi', '$kehadiran')");
-												
-												echo " <script>
-												alert('Pesan berhasil terkirim');
-												document.location.href='index.php?#tampil-pesan';
-												</script>
-												";
+												if ($action)
+												{
+
+													echo " <script>
+													alert('Pesan berhasil terkirim');
+													document.location.href='index.php?#tampil-pesan';
+													</script>
+													";
+												}else
+												{
+													$notifikasi = mysqli_error($conn);
+													echo " <script>
+													alert('Pesan tidak berhasil terkirim : $notifikasi');
+													document.location.href='index.php?#tampil-pesan';
+													</script>
+													";
+												}
 												// if (!$action)
 												// {
 												//     echo mysqli_error($conn);
@@ -688,7 +721,7 @@ transitions
 	
 	
 	<section class="testimonial1-body counter-area" id="tampil-pesan">
-	<div class="container" style="padding-top: 50px;padding-bottom:50px;">
+	<div class="container" style="padding-top: 50px;padding-bottom:50px;" data-aos="zoom-in">
     <div id="demo1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
 		<?php
@@ -719,7 +752,7 @@ transitions
 					if ($infoPesan['status_kehadiran'] == 'ya')
 					{
 						?>
-						<p style="font-family: Arial, Helvetica, sans-serif;font-style:normal;font-size:small">
+						<p class="status-kehadiran">
 								(Saya akan hadir)
 							</p>
 					<?php
@@ -727,7 +760,7 @@ transitions
 					{
 						?>
 						
-							<p style="font-family: Arial, Helvetica, sans-serif;font-style:normal;font-size:small">
+							<p class="status-kehadiran">
 								(Insyā Allah, Saya akan hadir)
 							</p>
 						
