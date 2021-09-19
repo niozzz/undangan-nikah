@@ -14,8 +14,10 @@
 	
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Playball%7CBitter" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 	<!-- Stylesheets -->
-	<link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/testimonial1.css" rel="stylesheet">
 	<link href="assets/css/fluidbox.min.css" rel="stylesheet">
 	<link href="assets/css/font-icon.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
@@ -72,7 +74,7 @@
   transform:scale(0.8);
 }
 
-[type="radio"] { 
+.ts [type="radio"] { 
   display:none; 
 }
 
@@ -197,29 +199,29 @@ transitions
 						$tanggal = $pecahTanggal[2];
 
 						if ($bulan == "01") {
-							echo "<h5 = class'date'>".$tanggal." Januari ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Januari ".$tahun."</h5>";
 						} else if ($bulan == "02"){
-							echo "<h5 = class'date'>".$tanggal." Februari ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Februari ".$tahun."</h5>";
 						}else if ($bulan == "03"){
-							echo "<h5 = class'date'>".$tanggal." Maret".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Maret".$tahun."</h5>";
 						} else if($bulan == "04"){
-							echo "<h5 = class'date'>".$tanggal." April ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." April ".$tahun."</h5>";
 						} else if ($bulan == "05"){
-							echo "<h5 class='date'>".$tanggal." Mei ".$tahun."</h5>";
+							echo "<h5 class='date'>Sabtu, ".$tanggal." Mei ".$tahun."</h5>";
 						} else if ($bulan == "06"){
-							echo "<h5 class='date'>".$tanggal." Juni ".$tahun."</h5>";
+							echo "<h5 class='date'>Sabtu, ".$tanggal." Juni ".$tahun."</h5>";
 						} else if ($bulan == "07"){
-							echo "<h5 = class'date'>".$tanggal." Juli ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Juli ".$tahun."</h5>";
 						} else if ($bulan == "08"){
-							echo "<h5 = class'date'>".$tanggal." Agustus ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Agustus ".$tahun."</h5>";
 						}else if ($bulan == "09"){
-							echo "<h5 = class'date'>".$tanggal." September ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." September ".$tahun."</h5>";
 						}else if ($bulan == "10"){
-							echo "<h5 = class'date'>".$tanggal." Oktober ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Oktober ".$tahun."</h5>";
 						}else if ($bulan == "11"){
-							echo "<h5 = class'date'>".$tanggal." November ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." November ".$tahun."</h5>";
 						}else if ($bulan == "12"){
-							echo "<h5 = class'date'>".$tanggal." Desember ".$tahun."</h5>";
+							echo "<h5 = class'date'>Sabtu, ".$tanggal." Desember ".$tahun."</h5>";
 						}
 
 					?>
@@ -495,7 +497,7 @@ transitions
 				// 			echo "<br>";
 							
 						?>
-						Acara Akad akan dilaksanakan pada pukul 08.00 WIB
+						Acara Akad akan dilaksanakan pada pukul 08.00 - 10.00 WIB
 						<br><br>
 					</div>
 				</div>
@@ -509,7 +511,7 @@ transitions
 				// 			echo "<br>";
 							}
 						?>
-						Acara Resepsi akan dilaksanakan pada pukul 11.00 WIB
+						Acara Resepsi akan dilaksanakan pada pukul 10.30 - 13.00 WIB
 						<br><br>
 					</div>
 				</div>
@@ -528,7 +530,7 @@ transitions
 				<div class="col-sm-12">
 					
 					<div class="heading pb-0" >
-						<h2 class="title">Gallery</h2>
+						<h2 class="title">Our Engagement</h2>
 						<span class="heading-bottom"><i class="icon icon-star"></i></span>
 					</div>
 					
@@ -540,15 +542,15 @@ transitions
 						<div class="w">
 							<div class="ts">
 								<input type="radio" id="c1" name="ts" checked="checked"/>
-								<label class="t" for="c1"><img src="./assets/images/lamaran4.JPG"/></label>
+								<label class="t" for="c1"><img src="./assets/images/lamaran4-min.JPG"/></label>
 								<input type="radio" id="c2" name="ts"/>
-								<label class="t" for="c2"><img src="./assets/images/lamaran1.JPG"/></label>
+								<label class="t" for="c2"><img src="./assets/images/lamaran1-min.JPG"/></label>
 								<input type="radio" id="c3" name="ts"/>
-								<label class="t" for="c3"><img src="./assets/images/lamaran2.JPG"/></label>
+								<label class="t" for="c3"><img src="./assets/images/lamaran2-min.JPG"/></label>
 								<input type="radio" id="c4" name="ts"/>
-								<label class="t" for="c4"><img src="./assets/images/lamaran3.JPG"/></label>
+								<label class="t" for="c4"><img src="./assets/images/lamaran3-min.JPG"/></label>
 								<input type="radio" id="c5" name="ts"/>
-								<label class="t" for="c5"><img src="./assets/images/lamaran5.JPG"/></label>
+								<label class="t" for="c5"><img src="./assets/images/lamaran5-min.JPG"/></label>
 							</div>
 						</div>
 							
@@ -568,7 +570,7 @@ transitions
 
 
 	<!-- start = gallery prewedding -->
-	<section class="section galery-area center-text border" id="kirim-pesan">
+	<section class="section galery-area center-text " id="kirim-pesan">
 		<div class="container">
 			<div class="row">
 
@@ -625,35 +627,50 @@ transitions
 									<div class="heading" style="width: 60%; margin:auto;">
 										<h2 class="title" >Kirim Pesan</h2>
 										<span class="heading-bottom"><i class="icon icon-star"></i></span>
-										<p style="text-align: justify;">Anda dapat membuat sebuah pesan untuk disampaikan kepada kedua mempelai. Pesan yang Anda kirim tidak dapat dilihat oleh publik.</p>
+										<p style="text-align: center;">Kirim pesan untuk mempelai</p>
 									</div>
 									<form method="post">
 										<div class="row">
-											<form method="POST" action="">
 												<div class="col-sm-12 margin-bottom">
 													<label>Nama</label>
-													<input class="name-input" type="text" name="nama">
+													<input class="name-input" type="text" name="nama" required>
 													<br>
 
 													<label>Pesan</label>
-													<input type="text" class="name-input" name="isi">
+													<input type="text" class="name-input" name="isi" required>
+													<br>
+
+													<input type="checkbox" class="mt-1" name="kehadiran" id="kehadiran1" value="ya">
+													<label for="kehadiran1">Saya akan hadir</label>
 												</div>
 												<div class="col-sm-12 center-text">
 													<button class="btn" name="kirim"><b>Kirim</b></button>
 												</div>
-											</form>
-											<?php
-											if (isset($_POST['kirim'])) {
-												$namaPengirim = $_POST['nama'];
-												$isi = $_POST['isi'];
-												mysqli_query($conn, "INSERT INTO pesan VALUES ('','$namaPengirim','$isi')");
-											}
-
-											?>
+											
 
 
 										</div><!-- row -->
 									</form>
+									<?php
+											if (isset($_POST['kirim'])) {
+												$namaPengirim = $_POST['nama'];
+												$isi = $_POST['isi'];
+												$kehadiran = $_POST['kehadiran'];
+												$action = mysqli_query($conn, "INSERT INTO pesan VALUES (NULL,'$namaPengirim','$isi', '$kehadiran')");
+												
+												echo " <script>
+												alert('Pesan berhasil terkirim');
+												document.location.href='index.php?#tampil-pesan';
+												</script>
+												";
+												// if (!$action)
+												// {
+												//     echo mysqli_error($conn);
+												// }
+												
+											}
+
+											?>
 								</div><!-- contact-form -->
 							</div><!-- col-sm-6 -->
 						</div>
@@ -667,6 +684,66 @@ transitions
 		</div>
 	</section>
 	<!-- end = galery prewedding -->
+
+	
+	
+	<section class="testimonial1-body counter-area" id="tampil-pesan">
+	<div class="container" style="padding-top: 50px;padding-bottom:50px;">
+    <div id="demo1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+		<?php
+		$pesanUntukmu = mysqli_query($conn,"SELECT * FROM pesan ORDER BY idPesan DESC");
+		$no =1;
+		while ($infoPesan = mysqli_fetch_array($pesanUntukmu)) {
+		?>
+
+		<?php
+		if ($no == 1)
+		{
+			?>
+
+		<div class="carousel-item active">
+			<?php
+		}else
+		{
+			?>
+			<div class="carousel-item">
+
+			<?php
+		}
+		?>
+                <div class="carousel-caption">
+                    <p style="margin: 0px 20px;"><?= $infoPesan['isi'] ?></p> 
+                    <div id="image-caption"><?= $infoPesan['namaPengirim'] ?></div>
+					<?php
+					if ($infoPesan['status_kehadiran'] == 'ya')
+					{
+						?>
+						<p style="font-family: Arial, Helvetica, sans-serif;font-style:normal;font-size:small">
+								(Saya akan hadir)
+							</p>
+					<?php
+					}else
+					{
+						?>
+						
+							<p style="font-family: Arial, Helvetica, sans-serif;font-style:normal;font-size:small">
+								(Insyā Allah, Saya akan hadir)
+							</p>
+						
+						<?php
+					}
+					?>
+                </div>
+            </div>
+		<?php
+		$no = 0;
+		}
+		?>
+        </div> <a class="carousel-control-prev" href="#demo1" data-slide="prev"> <i class='fas fa-arrow-left'></i> </a> <a class="carousel-control-next" href="#demo1" data-slide="next"> <i class='fas fa-arrow-right'></i> </a>
+    </div>
+</div>
+	</section>
 
 
 	<!-- satart = lokasi prewed -->
@@ -762,7 +839,7 @@ transitions
 	</footer>
 	<!-- end = footer -->
 	
-	<audio src="assets/music/backsound3.mp3" autoplay="autoplay" id="playAudio" loop="true"></audio>
+	<audio src="assets/music/backsound4.mp3" autoplay="autoplay" id="playAudio" loop="true"></audio>
     
     
 
@@ -770,7 +847,9 @@ transitions
 
 
 	<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
-	<script src="assets/js/jquery-3.1.1.min.js"></script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/tether.min.js"></script>
 	<script src="assets/js/bootstrap.js"></script>
 	<script src="assets/js/jquery.countdown.min.js"></script>
